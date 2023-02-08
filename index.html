@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Ushumana Dashboard</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="styles/index.css">
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div id="navbar" class="container-fluid">
+        <a class="navbar-brand" href=""><img class="imagen-logo" src="images/logos/logo1.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="home/dashboard">
+                <h5><i class="fas fa-home"></i> Inicio</h5>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="home/reservas">
+                <h5><i class="fas fa-swimming-pool"></i> Reservaciones</h5>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="home/tickets">
+                <h5><i class="fas fa-ticket-alt"></i> Tickets</h5>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="home/restaurante">
+                <h5><i class="fas fa-hamburger"></i> Restaurante</h5>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login">
+                <h5><i class="far fa-user"></i> Iniciar Sesion</h5>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+  </main>
+  <br>
+  <h1 style="color: black;" class="text-center">Dashboard Ushumana</h1>
+  <br>
+  <div class="container">
+    <p class="text-center">El siguiente Dashboard tiene un registro previo de las ventas realizadas durante el mes
+      en la alberca Ushumana
+    </p>
+  </div>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="circulo">
+          <div class="circulo2">
+            <h1 class="text-center">59</h1>
+            <h5 style="color: white;" class="text-center">Ventas Concretadas</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <!--Grafico de Barras-->
+        <div class="container overflow-auto">
+          <div class="row d-flex items-align-center">
+            <div class="col-lg-12">
+              <div id="chart_pastel"></div>
+            </div>
+          </div>
+        </div>
+        <!--Grafico de Barras-->
+      </div>
+      <div class="col-lg-12 text-center">
+        <p>Durante el presente mes se registran: <strong>59</strong> ventas Concretadas</p>
+        <li><strong>49</strong> ventas en Boletos</li>
+        <li><strong>10</strong> ventas en Reservaciones</li>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="container">
+    <h1 style="color: black;" class="text-center">Gráfico de Barras Ventas del Mes</h1>
+    <br>
+    <p>Cada barra representará las ventas de un mes específico, con su tamaño proporcional al número de ventas. Utiliza
+      el eje x para mostrar los meses y el eje y para mostrar el número de ventas. </p>
+  </div>
+  <br>
+  <!--Grafico de Barras-->
+  <div class="container overflow-auto">
+    <div class="row d-flex items-align-center">
+      <div class="col-lg-12">
+        <div id="chart_barras"></div>
+      </div>
+    </div>
+  </div>
+  <!--Grafico de Barras-->
+  <br>
+  <div class="container ">
+    <h1 style="color: black;" class="text-center">Gráfico de Linea Ventas del Mes</h1>
+    <br>
+    <p>Gráfico de línea para mostrar la tendencia de crecimiento en las ventas de una piscina a lo largo del tiempo.</p>
+  </div>
+  <br>
+  <!--Grafico de Linea-->
+  <div class="container overflow-auto">
+    <div class="row d-flex items-align-center">
+      <div class="col-lg-12">
+        <div id="chart_linea"></div>
+      </div>
+    </div>
+  </div>
+  <!--Grafico de Linea-->
+  <br>
+  <h1 class="text-center" style="color: black;">Tabla de Ventas</h1>
+  <br>
+  <!--Grafico de Linea-->
+  <div class="container">
+    <div class="table-responsive text-center">
+      <table class="table table-primary">
+        <thead>
+          <tr>
+            <th scope="col">Column 1</th>
+            <th scope="col">Column 2</th>
+            <th scope="col">Column 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="">
+            <td scope="row">R1C1</td>
+            <td>R1C2</td>
+            <td>R1C3</td>
+          </tr>
+          <tr class="">
+            <td scope="row">Item</td>
+            <td>Item</td>
+            <td>Item</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+  <!--Grafico de Linea-->
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4 d-flex align-items-center justify-content-center">
+          <a href=""><img class="imagen-logo" src="images/logos/logo1.png" alt=""></a>
+        </div>
+        <div id="arreglo1" class="col-lg-4 col-md-4 col-sm-4">
+          <br>
+          <p id="hiper" class="d-flex align-items-center justify-content-center"><a
+              style="color: white; text-decoration: none;" href="#">Contactanos</a></p>
+          <p id="hiper" class="d-flex align-items-center justify-content-center"><a
+              style="color: white; text-decoration: none;" href="#">Terminos y Condiciones</a></p>
+          <p id="hiper" class="d-flex align-items-center justify-content-center"><a
+              style="color: white; text-decoration: none;" href="#">Comida</a></p>
+          <p id="hiper" class="d-flex align-items-center justify-content-center"><a
+              style="color: white; text-decoration: none;" href="#">Reservaciones</a></p>
+        </div>
+        <div id="arreglo2" class="col-lg-4 col-md-4 col-sm-4">
+          <br>
+          <h5><i class="fab fa-instagram"> @Ushimana</i></h5>
+          <h5><i class="fab fa-twitter"> @UshimanaBalneario</i></h5>
+          <h5><i class="fab fa-whatsapp"> +593 987654321</i></h5>
+          <h5><i class="fab fa-facebook"> Ushimana</i></h5>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+  <!--Creacion con google chart-->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="controllers/barras.js"></script>
+  <script src="controllers/linea.js"></script>
+  <script src="controllers/pasteles.js"></script>
+  <!--Creacion con google chart-->
+</body>
+
+</html>

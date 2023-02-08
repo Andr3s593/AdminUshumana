@@ -1,0 +1,128 @@
+#navbar{
+    background: #F77F00;
+    position: relative;
+    bottom: 10px;
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+    color: #FFFF;    
+    margin: 1px;
+}
+a:hover{
+    color: #003049;
+    transition: 0.5s;    
+}
+.imagen-logo{
+    width: 120px;
+    height: 80px;
+}
+#col2:hover{    
+    background: #003049;
+    transition: 0.5s;
+}
+#col3:hover{    
+    background: #003049;
+    transition: 0.5s;
+}
+#col4:hover{    
+    background: #003049;
+    transition: 0.5s;
+}
+#col5:hover{    
+    background: #003049;
+    transition: 0.5s;
+}
+#col6:hover{    
+    background: #003049;
+    transition: 0.5s;
+}
+@media screen and (max-width: 576px) {            
+}
+/*//*/
+/*/Footer abajo/*/
+html{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;    
+    min-height: 100%;
+}
+footer{
+    margin-top: auto;
+    background: black;
+}
+/*/Footer abajo/*/
+h1{
+    color:white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: #D62828;
+    transition: 0.5s;
+}
+.imagen-logo{
+    width: 150px;
+    height: 100px;
+}
+.linea{
+    margin: 0 auto;
+    height: 1px;
+    width: 95%;
+    background: white;
+}
+i{
+    color: white;   
+    margin-top: 7px;
+}
+@media screen and (max-width: 560px) {
+    #arreglo1{        
+        text-align: center;    
+    }
+    #arreglo2{        
+        text-align: center;
+    }
+}
+.circulo{
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;    
+    background: #003049 ;
+    margin: auto;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+}
+.circulo2{
+    position: relative;
+    left: 15px;
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;    
+    background: #F77F00 ;
+    margin: auto;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+}
+#hiper{
+    color: white;
+}
+#hiper:hover{
+    color: #003049;
+    transition: 1s;
+}
+#chart_barras{
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+}
+#chart_linea{
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+}
+#chart_pastel{
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+}
